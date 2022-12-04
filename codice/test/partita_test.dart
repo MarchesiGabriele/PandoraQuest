@@ -10,7 +10,7 @@ void main() {
 
       List<Stanza> mappa = partita.mappa;
 
-      expect(mappa.length, 10);
+      expect(mappa.length, 4);
     });
 
     // Controllo che il metodo getStanzaCorrente non ritorni un null

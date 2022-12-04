@@ -6,15 +6,13 @@ import 'package:flutter_test/flutter_test.dart';
 void main() {
   group("test funzioni creazione partita", () {
     test("controllo che creaDomandeNemico mi restituisca 3 domande", () {
-      var c = CreazionePartita()
-          .creaDomandeNemico(LivelloNemico.ALTO, Disciplina.DATABASE);
+      var c = CreazionePartita().creaDomandeNemico(LivelloNemico.ALTO, Disciplina.DATABASE);
 
       expect(c.length, 3);
     });
 
     test("controllo che le domande create siano del livello giusto", () {
-      var c = CreazionePartita()
-          .creaDomandeNemico(LivelloNemico.ALTO, Disciplina.DATABASE);
+      var c = CreazionePartita().creaDomandeNemico(LivelloNemico.ALTO, Disciplina.DATABASE);
 
       expect(c[0].difficolta, Difficolta.DIFFICILE);
       expect(c[1].difficolta, Difficolta.DIFFICILE);
@@ -22,19 +20,17 @@ void main() {
     });
 
     test("controllo che le domande create siano della giusta disciplina", () {
-      var c = CreazionePartita()
-          .creaDomandeNemico(LivelloNemico.MEDIO, Disciplina.RETI);
+      var c = CreazionePartita().creaDomandeNemico(LivelloNemico.MEDIO, Disciplina.RETI);
 
       expect(c[0].disciplina, Disciplina.RETI);
       expect(c[1].disciplina, Disciplina.RETI);
       expect(c[2].disciplina, Disciplina.RETI);
     });
 
-    test("controllo che creaNemico crei il nemico giusto in base all'index",
-        () {
+    test("controllo che creaNemico crei il nemico giusto in base all'index", () {
       var cp = CreazionePartita();
       var n1 = cp.creaNemico(1);
-      var n2 = cp.creaNemico(5);
+      var n2 = cp.creaNemico(2);
       var n3 = cp.creaNemico(8);
 
       expect(n1.livello, LivelloNemico.BASSO);
