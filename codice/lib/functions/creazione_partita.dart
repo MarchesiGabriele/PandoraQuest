@@ -62,9 +62,9 @@ class CreazionePartita {
   }
 
   Nemico creaNemico(int indexStanza) {
-    if (indexStanza >= 0 && indexStanza <= 3) {
+    if (indexStanza >= 0 && indexStanza <= 1) {
       return NemicoDB().listaNemici.where((element) => element.livello == LivelloNemico.BASSO).toList().first;
-    } else if (indexStanza >= 4 && indexStanza <= 6) {
+    } else if (indexStanza >= 2 && indexStanza <= 3) {
       return NemicoDB().listaNemici.where((element) => element.livello == LivelloNemico.MEDIO).toList().first;
     } else {
       return NemicoDB().listaNemici.where((element) => element.livello == LivelloNemico.ALTO).toList().first;

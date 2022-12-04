@@ -34,18 +34,9 @@ class EsplorazioneDB {
         ),
       ],
       dialogoEsplorazione: [
-        {
-          "Entri in una stanza molto disordinata, con libri ed ampolle sparsa dappertutto":
-              false
-        },
-        {
-          "Ti metti allora a frugare tra i libri per vedere di cosa trattano":
-              false
-        },
-        {
-          "Ti avvicini ad uno scaffale e devi che in cima è presente un oggetto luccicante, cosa vuoi fare?":
-              true
-        },
+        {"Entri in una stanza molto disordinata, con libri ed ampolle sparsa dappertutto": false},
+        {"Ti metti allora a frugare tra i libri per vedere di cosa trattano": false},
+        {"Ti avvicini ad uno scaffale e devi che in cima è presente un oggetto luccicante, cosa vuoi fare?": true},
       ],
       immaginiSfondo: ["images/s1.jpg", "images/s1.jpg"],
     ),
@@ -62,10 +53,7 @@ class EsplorazioneDB {
         ),
       ],
       dialogoEsplorazione: [
-        {
-          "Entri in un locale che sembra essere una stanza da letto di qualche artista musicale":
-              false
-        },
+        {"Entri in un locale che sembra essere una stanza da letto di qualche artista musicale": false},
         {"Non sembra esserci nulla di interessante da raccogliere": true},
       ],
       immaginiSfondo: ["images/s2.jpg", "images/s2.jpg"],
@@ -102,14 +90,8 @@ class EsplorazioneDB {
         )
       ],
       dialogoEsplorazione: [
-        {
-          "Entri in una piccola stanza dall'aspetto molto cozy. Ti metti a frugare tra gli oggetti presenti ":
-              false
-        },
-        {
-          "Vedi che dentro la fornace sembra esserci qualcosa di utile, cosa vuoi fare?":
-              true
-        },
+        {"Entri in una piccola stanza dall'aspetto molto cozy. Ti metti a frugare tra gli oggetti presenti ": false},
+        {"Vedi che dentro la fornace sembra esserci qualcosa di utile, cosa vuoi fare?": true},
       ],
       immaginiSfondo: ["images/s3.jpg", "images/s3.jpg"],
     ),
@@ -127,10 +109,7 @@ class EsplorazioneDB {
       ],
       dialogoEsplorazione: [
         {"Entri in una stanza piena di libri e molto illuminata": false},
-        {
-          "Provi a rovistare tra le pergamene e le pile di libri ma non trovi nulla di utile":
-              true
-        },
+        {"Provi a rovistare tra le pergamene e le pile di libri ma non trovi nulla di utile": true},
       ],
       immaginiSfondo: ["images/s4.jpg", "images/s4.jpg"],
     ),
@@ -190,8 +169,7 @@ class EsplorazioneDB {
             }
             return;
           },
-          titoloPulsante:
-              "Provi a cercare la combinazione (50% prob. di successo)",
+          titoloPulsante: "Provi a cercare la combinazione (50% prob. di successo)",
         ),
 
         // AZIONE 2
@@ -220,10 +198,7 @@ class EsplorazioneDB {
           "Ti siedi sul divano e ti messi ad osservare i quadri appesi sopra il camino, noti che uno di essi è storto":
               false
         },
-        {
-          "Ti avvicini, provi a spostare il quadro e vedi che dietro è prensente una cassaforte, cosa vuoi fare?":
-              true
-        }
+        {"Ti avvicini, provi a spostare il quadro e vedi che dietro è prensente una cassaforte, cosa vuoi fare?": true}
       ],
       immaginiSfondo: ["images/s6.jpg", "images/s6.jpg"],
     ),
@@ -258,10 +233,7 @@ class EsplorazioneDB {
           "Dai un occhiata al libro sul tavolo, ma le scritte sono incomprensibili, fai allora un giro della stanza":
               false
         },
-        {
-          "Vedi un grosso serpente stringere un oggetto brillante tra le sue squame, Cosa vuoi fare?":
-              true
-        }
+        {"Vedi un grosso serpente stringere un oggetto brillante tra le sue squame, Cosa vuoi fare?": true}
       ],
       immaginiSfondo: ["images/s7.jpg", "images/s7.jpg"],
     ),
@@ -275,8 +247,7 @@ class EsplorazioneDB {
             p!.decrSalute(7);
             return;
           },
-          titoloPulsante:
-              "Fuggi dall'impianto di ventilazione ferendoti una gamba",
+          titoloPulsante: "Fuggi dall'impianto di ventilazione ferendoti una gamba",
         ),
 
         // AZIONE 2
@@ -298,14 +269,8 @@ class EsplorazioneDB {
         )
       ],
       dialogoEsplorazione: [
-        {
-          "Questa stanza è completamente diversa dalle altre, non ha nulla di accogliente e l'odore è terribile":
-              false
-        },
-        {
-          "Cerchi di muoverti evitando il sangue per terra e sui mobiletti":
-              false
-        },
+        {"Questa stanza è completamente diversa dalle altre, non ha nulla di accogliente e l'odore è terribile": false},
+        {"Cerchi di muoverti evitando il sangue per terra e sui mobiletti": false},
         {
           "Ad un certo punto senti un ruggito provenire dal fondo del corridoio, ti sporgi e vedi una creatura senza testa correre verso la tua stanza. Cosa fai?":
               true
@@ -337,18 +302,9 @@ class EsplorazioneDB {
         ),
       ],
       dialogoEsplorazione: [
-        {
-          "Entri in una stanza con il camino acceso da cui proviene un leggero tepore ed un odore di bosco":
-              false
-        },
-        {
-          "Ti siedi sul divanetto, sposti la coperta e sotto trovi un oggetto, decidi di raccoglierlo":
-              false
-        },
-        {
-          "Sei molto stanco, vuoi dormire prima di continuare con il viaggio ?":
-              true
-        }
+        {"Entri in una stanza con il camino acceso da cui proviene un leggero tepore ed un odore di bosco": false},
+        {"Ti siedi sul divanetto, sposti la coperta e sotto trovi un oggetto, decidi di raccoglierlo": false},
+        {"Sei molto stanco, vuoi dormire prima di continuare con il viaggio ?": true}
       ],
       immaginiSfondo: ["images/s9.jpg", "images/s9.jpg"],
     ),
@@ -390,10 +346,7 @@ class EsplorazioneDB {
           "Cercando di non far caso alle creature immerse negli acquari, noti una botola al centro della stanza, provi ad aprirla":
               false
         },
-        {
-          "Non vedi il fondo, ma vedi un riflesso di un oggetto sul fondo del buco. Cosa vuoi fare?":
-              true
-        }
+        {"Non vedi il fondo, ma vedi un riflesso di un oggetto sul fondo del buco. Cosa vuoi fare?": true}
       ],
       immaginiSfondo: ["images/s10.jpg", "images/s10.jpg"],
     ),

@@ -13,7 +13,7 @@ class PulsanteInventario extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Consumer2<Personaggio, Partita>(
-      builder: (context, personaggio, partita, _) {
+      builder: (__, personaggio, partita, _) {
         return SizedBox(
           // dimensioni pulsante
           height: size.height / 8,
@@ -27,11 +27,14 @@ class PulsanteInventario extends StatelessWidget {
               "Inventario",
               style: GameFonts().hallelujaFont(size: 20),
             ),
-            onPressed: () {
-              showDialog(
+            onPressed: () async {
+              await showDialog(
                 context: context,
-                builder: (context) => MultiProvider(
-                  providers: [ChangeNotifierProvider<Partita>(create: (_) => partita), ChangeNotifierProvider<Personaggio>(create: (_) => personaggio)],
+                builder: (_) => MultiProvider(
+                  providers: [
+                    ChangeNotifierProvider<Partita>.value(value: partita),
+                    ChangeNotifierProvider<Personaggio>.value(value: personaggio)
+                  ],
                   child: AlertDialog(
                     backgroundColor: GameTheme.primaryColor,
                     content: SizedBox(
